@@ -35,6 +35,7 @@
             @enderror
          </div>
          <div class="mb-3 form-check">
+            <label class="form-check-label" for="category_id">Categoria</label>
             <select class="form-control mb-3" name="category_id">
                <option>Seleziona la categoria</option>
                @foreach ($categories as $category)

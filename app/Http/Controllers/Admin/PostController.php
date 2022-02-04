@@ -74,7 +74,8 @@ class PostController extends Controller
     {
         $post = Post::find($id);
         if ($post) {
-            return view('admin.posts.edit', compact('post'));
+            $categories = Category::all();
+            return view('admin.posts.edit', compact('post', 'categories'));
         }
         abort(404, 'Post non trovato');
     }
