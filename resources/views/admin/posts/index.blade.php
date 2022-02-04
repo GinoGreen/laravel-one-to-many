@@ -14,6 +14,7 @@
                <tr>
                   <th scope="col">ID</th>
                   <th scope="col">Titolo</th>
+                  <th scope="col">Categoria</th>
                   <th scope="col">Azioni</th>
                </tr>
             </thead>
