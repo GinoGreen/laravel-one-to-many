@@ -35,6 +35,18 @@
             @enderror
          </div>
          <div class="mb-3 form-check">
+            <select class="form-control mb-3" name="category_id">
+               <option>Seleziona la categoria</option>
+               @foreach ($categories as $category)
+                  <option value="{{ $category->id }}"
+                     @if ($category->id == old('category_id'))
+                        selected
+                     @endif   
+                  >{{ $category->name }}</option>
+               @endforeach
+            </select>
+         </div>
+         <div class="mb-3 form-check">
             <label class="form-check-label" for="content">Contenuto</label>
             <textarea
                name="content"
